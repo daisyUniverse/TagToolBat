@@ -5,7 +5,8 @@ just some automation for TagTool porting
 
 Pre Requisites to make this work
 
-1: Must be in the ED Maps folder
+
+1. Must be in the ED Maps folder
 
 2. Tagtool's files must be in the same folder
 
