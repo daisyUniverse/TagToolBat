@@ -1,0 +1,49 @@
+echo Porting Halo 3 SP Maps
+
+UseAudioCache "\tempsnd\"
+
+opencachefile "h3\maps\010_jungle.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "h3\maps\005_intro.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "h3\maps\020_base.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "h3\maps\030_outskirts.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "h3\maps\040_voi.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "h3\maps\050_floodvoi.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "h3\maps\070_waste.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "h3\maps\100_citadel.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "h3\maps\110_hc.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "h3\maps\120_halo.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "h3\maps\130_epilogue.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+updatemapfiles "h3\maps\info"

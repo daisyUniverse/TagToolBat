@@ -1,0 +1,33 @@
+echo Porting Halo 3 MP maps without DLC
+UseAudioCache "\tempsnd\"
+
+OpenCacheFile "h3\maps\construct.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\isolation.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\salvation.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\snowbound.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+EditTag levels\multi\guardian\guardian.scenario
+CopyForgePalette levels\multi\construct\construct.scenario
+CopyForgePalette levels\multi\isolation\isolation.scenario
+CopyForgePalette levels\multi\salvation\salvation.scenario
+CopyForgePalette levels\multi\snowbound\snowbound.scenario
+exitTo tags
+
+UpdateMapFiles h3\maps\info
+
+edittag levels\multi\snowbound\snowbound.sbsp
+SetField Materials[41].RenderMethod 0x101F
+SetField Materials[42].RenderMethod 0x101F
+savetagchanges
+exitTo tags

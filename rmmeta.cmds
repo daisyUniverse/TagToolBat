@@ -1,0 +1,280 @@
+echo Porting Halo 3 SP Maps
+
+UseAudioCache "\tempsnd\"
+
+EditTag ai\generic.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag ai\generic_turret.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_bodyguard.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_bodyguard_no_grenade.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_captain.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_captain_major.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_captain_major_no_grenade.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_captain_no_grenade.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_captain_ultra.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_chieftain_armor.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_chieftain_armor_no_grenade.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_chieftain_weapon.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_jumppack.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_major.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_phantom.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_stalker.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\brute\ai\brute_ultra.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\bugger\ai\bugger.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\bugger\ai\bugger_major.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\civilians\worker\ai\worker.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\civilians\worker\ai\worker_wounded.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\cortana\ai\cortana.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\dervish\ai\dervish.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\elite\ai\elite.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\elite\ai\elite_major.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\elite\ai\elite_specops.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\elite\ai\elite_specops_commander.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\flood_infection\ai\flood_infection.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\flood_pureforms\ai\flood_pureform.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\flood_ranged\ai\flood_pureform_ranged.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\flood_stalker\ai\flood_pureform_stalker.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\flood_tank\ai\flood_pureform_tank.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\floodcarrier\ai\flood_carrier.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\floodcombat_base\ai\floodcombat_base.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\floodcombat_brute\ai\floodcombat_brute.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\floodcombat_elite\ai\floodcombat_elite.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\floodcombat_elite\ai\floodcombat_elite_shielded.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\floodcombat_human\ai\flood_combat_human.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\grunt\ai\grunt.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\grunt\ai\grunt_heavy.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\grunt\ai\grunt_major.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\grunt\ai\grunt_ultra.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\hunter\ai\hunter.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\jackal\ai\jackal.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\jackal\ai\jackal_major.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\jackal\ai\jackal_sniper.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\marine\ai\marine.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\marine\ai\marine_female.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\marine\ai\marine_johnson.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\marine\ai\marine_johnson_boss.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\marine\ai\marine_johnson_halo.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\marine\ai\marine_no_trade_weapon.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\marine\ai\marine_odst.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\marine\ai\marine_odst_sgt.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\marine\ai\marine_pilot.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\marine\ai\marine_sgt.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\marine\ai\marine_wounded.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\marine\ai\naval_officer.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\miranda\ai\miranda.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\monitor\ai\monitor.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\monitor\ai\monitor_combat.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\sentinel_aggressor\ai\sentinel_aggressor.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\sentinel_aggressor\ai\sentinel_aggressor_captain.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\sentinel_aggressor\ai\sentinel_aggressor_major.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\sentinel_constructor\ai\sentinel_constructor.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\characters\truth\ai\truth.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\equipment\autoturret\autoturret.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags
+EditTag objects\giants\scarab\ai\scarab.character
+removeblockelements MetagameProperties 0 *
+savetagchanges
+exitTo tags

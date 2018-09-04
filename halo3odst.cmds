@@ -1,0 +1,49 @@
+echo Porting ODST Maps
+
+UseAudioCache "\tempsnd\"
+
+opencachefile "odst\maps\c100.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "odst\maps\c200.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "odst\maps\h100.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "odst\maps\l200.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "odst\maps\l300.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "odst\maps\sc100.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "odst\maps\sc110.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "odst\maps\sc120.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "odst\maps\sc130.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "odst\maps\sc140.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+opencachefile "odst\maps\sc150.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+updatemapfiles "odst\maps\info"

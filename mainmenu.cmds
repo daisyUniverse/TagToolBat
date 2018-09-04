@@ -1,0 +1,9 @@
+echo Replacing Main Menu
+
+DeleteTag levels\ui\mainmenu\mainmenu.scnr
+
+opencachefile "h3\maps\mainmenu.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+updatemapfiles h3\maps\info

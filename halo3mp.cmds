@@ -1,0 +1,118 @@
+echo Porting Halo 3 MP maps
+
+UseAudioCache "\tempsnd\"
+
+OpenCacheFile "h3\maps\construct.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\isolation.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\salvation.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\snowbound.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\armory.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\chillout.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\descent.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\docks.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\fortress.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\ghosttown.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\lockout.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\midship.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\sandbox.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\sidewinder.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\spacecamp.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+OpenCacheFile "h3\maps\warehouse.map"
+PortTag NoForgePalette Recursive Scripts MatchShaders *.scnr
+exit
+
+EditTag levels\multi\guardian\guardian.scenario
+CopyForgePalette levels\multi\construct\construct.scenario
+CopyForgePalette levels\multi\isolation\isolation.scenario
+CopyForgePalette levels\multi\salvation\salvation.scenario
+CopyForgePalette levels\multi\snowbound\snowbound.scenario
+CopyForgePalette levels\dlc\armory\armory.scenario
+CopyForgePalette levels\dlc\chillout\chillout.scenario
+CopyForgePalette levels\dlc\descent\descent.scenario
+CopyForgePalette levels\dlc\docks\docks.scenario
+CopyForgePalette levels\dlc\fortress\fortress.scenario
+CopyForgePalette levels\dlc\ghosttown\ghosttown.scenario
+CopyForgePalette levels\dlc\lockout\lockout.scenario
+CopyForgePalette levels\dlc\midship\midship.scenario
+CopyForgePalette levels\dlc\sandbox\sandbox.scenario
+CopyForgePalette levels\dlc\sidewinder\sidewinder.scenario
+CopyForgePalette levels\dlc\spacecamp\spacecamp.scenario
+CopyForgePalette levels\dlc\warehouse\warehouse.scenario
+exitTo tags
+
+UpdateMapFiles h3\maps\info
+
+edittag levels\dlc\midship\midship.sbsp
+SetField materials[090].RenderMethod 0x101F
+savetagchanges
+exitTo tags
+
+edittag levels\dlc\sidewinder\shaders\side_tree_branch_snow.rmsh
+SetField ShaderProperties[0].Unknown7 0
+savetagchanges
+exitTo tags
+
+edittag levels\multi\snowbound\snowbound.sbsp
+SetField Materials[41].RenderMethod 0x101F
+SetField Materials[42].RenderMethod 0x101F
+savetagchanges
+exitTo tags
+
+edittag objects\levels\dlc\sandbox\shaders\sandbox_grid_dim.rmhg
+editblock shaderproperties[0]
+removeblockelements unknown 0 *
+addblockelements unknown
+savetagchanges
+exitTo tags
+
+edittag objects\levels\dlc\sandbox\shaders\sandbox_grid.rmhg
+editblock shaderproperties[0]
+removeblockelements unknown 0 *
+addblockelements unknown
+savetagchanges
+exitTo tags
